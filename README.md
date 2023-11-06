@@ -58,9 +58,10 @@ Status Code: 200 OK
 Body: Array of JSON Objects representing bet entries.
 Example Response
 json
+Copy code
 [
   {
-    "address": "sui address",
+    "address": "123 Main Street",
     "global_bet_id": 1,
     "bet_id": 101,
     "bet_team1": "Team A",
@@ -83,6 +84,7 @@ Status Code: 200 OK
 Body: JSON Object representing the bet entry.
 Example Response
 json
+Copy code
 {
   "address": "123 Main Street",
   "global_bet_id": 1,
@@ -103,7 +105,7 @@ Status Code: 200 OK
 Body: Array of JSON Objects representing user bet entries.
 Example Response
 json
-
+Copy code
 [
   {
     "bet_id": 101,
@@ -124,7 +126,7 @@ Status Code: 200 OK
 Body: JSON Object representing the user bet entry.
 Example Response
 json
-
+Copy code
 {
   "bet_id": 101,
   "global_bet_id": 1,
