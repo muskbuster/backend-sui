@@ -92,7 +92,7 @@ Body: Array of JSON Objects representing bet entries.
 ```json
 [
   {
-    "address": "123 Main Street",
+    "address": "Sui address",
     "global_bet_id": 1,
     "bet_id": 101,
     "bet_team1": "Team A",
@@ -102,5 +102,116 @@ Body: Array of JSON Objects representing bet entries.
     "bet_description": "Bet on the match between Team A and Team B",
     "bet_name": "Team A vs Team B"
   },
-  // Additional bet entries...
 ]
+
+```
+
+## Get Bet Details by ID
+
+- **URL:** `/bets/allbets/:id`
+- **Method:** `GET`
+- **Description:** Retrieve details of a specific bet entry from the AllBets collection.
+
+### URL Parameters
+
+- `id`: The ID of the bet.
+
+### Response
+
+- **Status Code:** 200 OK
+- **Body:** JSON Object representing the bet entry.
+
+#### Example Response
+
+```json
+{
+  "address": "sui_address",
+  "global_bet_id": 1,
+  "bet_id": 101,
+  "bet_team1": "Team A",
+  "bet_team1_amount": 500,
+  "bet_team2": "Team B",
+  "bet_team2_amount": 300,
+  "bet_description": "Bet on the match between Team A and Team B",
+  "bet_name": "Team A vs Team B"
+}
+```
+## Get Bet Details by ID
+
+- **URL:** `/bets/allbets/:id`
+- **Method:** `GET`
+- **Description:** Retrieve details of a specific bet entry from the AllBets collection.
+
+### URL Parameters
+
+- `id`: The ID of the bet.
+
+### Response
+
+- **Status Code:** 200 OK
+- **Body:** JSON Object representing the bet entry.
+
+#### Example Response
+
+```json
+{
+  "address": "sui_address",
+  "global_bet_id": 1,
+  "bet_id": 101,
+  "bet_team1": "Team A",
+  "bet_team1_amount": 500,
+  "bet_team2": "Team B",
+  "bet_team2_amount": 300,
+  "bet_description": "Bet on the match between Team A and Team B",
+  "bet_name": "Team A vs Team B"
+}
+```
+## Get All User Bet Entries
+
+- **URL:** `/bets/userbets`
+- **Method:** `GET`
+- **Description:** Retrieve all user bet entries from the UserBets collection.
+
+### Response
+
+- **Status Code:** 200 OK
+- **Body:** Array of JSON Objects representing user bet entries.
+
+#### Example Response
+
+```json
+[
+  {
+    "bet_id": 101,
+    "global_bet_id": 1,
+    "amount_deposited": 100,
+    "team_deposited_to": "Team A"
+  },
+  // Additional user bet entries...
+]
+```
+## Get User Bet Details by ID
+
+- **URL:** `/bets/userbets/:id`
+- **Method:** `GET`
+- **Description:** Retrieve details of a specific user bet entry from the UserBets collection.
+
+### URL Parameters
+
+- `id`: The ID of the user bet.
+
+### Response
+
+- **Status Code:** 200 OK
+- **Body:** JSON Object representing the user bet entry.
+
+#### Example Response
+
+```json
+{
+  "bet_id": 101,
+  "global_bet_id": 1,
+  "amount_deposited": 100,
+  "team_deposited_to": "Team A"
+}
+```
