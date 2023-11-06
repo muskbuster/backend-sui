@@ -187,7 +187,7 @@ Body: Array of JSON Objects representing bet entries.
     "amount_deposited": 100,
     "team_deposited_to": "Team A"
   },
-  // Additional user bet entries...
+  
 ]
 ```
 ## Get User Bet Details by ID
